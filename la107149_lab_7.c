@@ -21,10 +21,6 @@ void bubbleSort(int arr[], int n)
    }
    for (i = 0; i < n; i++)
       printf("Number of swaps needed for index %d: %d\n", i, swaps[i]);
-   int i;
-   for(i= 0; i<n; i++){
-   		printf("%d ", arr[i]);
-   }
 }
 
 int main()
@@ -32,6 +28,9 @@ int main()
    int arr[] = {97,16,45,63,13,22,7,58,72};
    int n = sizeof(arr)/sizeof(arr[0]);
    bubbleSort(arr, n);
+   int i;
+   for(i= 0; i<n; i++){
+   		printf("%d ", arr[i]);
+   }
    return 0;
 }
-
